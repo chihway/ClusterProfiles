@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=splashback_%j
 #SBATCH --time=03:00:00
-#SBATCH --ntasks=14
+##SBATCH --ntasks=14
 #SBATCH --exclusive
 #SBATCH --partition=broadwl
 #SBATCH --account=pi-chihway
@@ -12,7 +12,7 @@
 
 data_dir=/project/kicp/chihway/brutus/splashback/
 
-source
+source /project2/chihway/setup/setup_midway2.sh
 
 jkid=${SLURM_ARRAY_TASK_ID}
 
